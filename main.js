@@ -2,9 +2,14 @@
 // using RNG to pick out of array of strings for beginning, middle,
 // and end
 
-const first = ['1', '2', '3', '4'];
+const first = ['Hi', 'Hello', 'Hey', 'Howdy'];
 
-const second = ['1', '2', '3', '4'];
+const second = ['friend', 'amigo', 'partner', 'bud'];
 
-const third = ['1', '2', '3', '4'];
+const third = [', have good day.', ', time get after it.', ', create the life you want.', ',dont fall shrot of your potential.'];
 
+function message_gen() {
+    console.log(`${first[Math.floor(Math.random() * 4)]} ${second[Math.floor(Math.random() * 4)]} ${third[Math.floor(Math.random() * 4)]}`);
+}
+
+message_gen();
